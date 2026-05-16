@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Joe Chu</title>
+    <meta name="author" content="Joe Chu">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Joe Chu. Home page featuring personal info, web development resources.">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://linkedin.com/">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://byupw.instructure.com/.">Canvas</a>
+                </li>
+                <li>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/26?lang=eng&id=p27#p27">Scripture</a>
+                </li>
+                <li>
+                    <a href="#">Final Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Joe Chu</h1>
+        <div class="grid-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content-about">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maiores labore exercitationem. Ullam numquam itaque placeat, saepe aliquid delectus soluta, labore maiores sequi animi corporis sapiente ratione! Sunt facere commodi id ut debitis voluptatum vel eius? Voluptates quaerat iure deleniti!!</p>
+                    <img src="/images/profile.jpg" alt="Profile_Picture">
+                    <div class="location-section">
+                        <h3>Lima, Peru</h3>
+                        <div class="flag-container">
+                            <img src="/images/Flag_of_Peru.jpg" alt="Flag_of_Peru">
+                            <p>Official Flag of Peru</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aut ea necessitatibus? Dolorum modi ea sed cum dicta quod! Recusandae ab sed, hic sint fuga amet beatae deserunt accusantium obcaecati?</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul class="resources-list">
+                    <li>
+                        <a href="#">Dev.to Community</a>
+                    </li>
+                    <li>
+                        <a href="#">Smashing Magazine</a>
+                    </li>
+                    <li>
+                        <a href="#">CSS Trick</a>
+                    </li>
+                    <li>
+                        <a href="#">W3 Schools</a>
+                    </li>
+                    <li>
+                        <a href="#">Udemy</a>
+                    </li>
+                    <li>
+                        <a href="#">Lorem ipsum dolor sit.</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Joe Chu | Lima-Peru</p>
+        <p id="lastModified"> </p>
+    </footer>
 </body>
 </html>
