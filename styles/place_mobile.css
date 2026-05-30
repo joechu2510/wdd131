@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #5c4033;
+    --secondary-color: #1e4620;
+    --accent-color: #7a5c43;
+    --text-color: #2b2b2b;
+    --bg-color: #fcf9f5;
+    --card-bg: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    --font-stack: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.image_frame picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.data_frame, .weather_frame {
+    background: var(--card-bg);
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 420px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.data_frame h2, .weather_frame h2 {
+    text-align: center;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.4rem;
+}
+
+.data_frame p, .weather_frame p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+}
+
+.data_frame p span:first-child, 
+.weather_frame p span:first-child {
+    font-weight: 700;
+    color: #444;
+}
+
+.data_frame p span:last-child, 
+.weather_frame p span:last-child {
+    text-align: right;
+    display: inline-block;
+}
+
+.weather-svg {
+    display: block;
+    margin: 0.5rem auto 1.2rem auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    border-top: 4px solid var(--secondary-color);
+}

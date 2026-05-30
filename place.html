@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page - Peru</title>
+    <meta name="author" content="Joe Chu">
+    <meta name="description" content="WDD131 Assignment - Country Web Page featuring Peruvian Alpaca data and weather conditions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place_mobile.css">
+    <link rel="stylesheet" href="styles/place_wide.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+
+    <main>
+        <div class="image_frame">
+            <picture>
+                <source srcset="images/alpaca_wide.webp" media="(min-width: 1000px)">
+                <img src="images/alpaca_small.webp" alt="peruvian alpaca" width="300" height="400">
+            </picture>
+        </div>
+        
+        <section class="data_frame">
+            <h2>Data</h2>
+            <p><strong>Area:</strong>1,285,216 sq km</p>
+            <p><strong>Population:</strong>34,352,719</p>
+            <p><strong>Capital:</strong>Lima</p>
+            <p><strong>Languages:</strong>Spanish, Quechua, Aymara</p>
+            <p><strong>Currency:</strong>Sol (PEN)</p>
+            <p><strong>Time Zone:</strong>UTC-5</p>
+            <p><strong>Calling Code:</strong>+51</p>
+            <p><strong>Internet TLD:</strong>.pe</p>
+        </section>
+        
+        <section class="weather_frame">
+            <h2 class="weather-title">Weather</h2>
+            <img class="weather-svg" src="images/weather-color-sun-cloud-svgrepo-com.svg" alt="weather icon" width="50" height="50">
+            <p>
+                <span><strong>Temperature:</strong></span> 
+                <span><span id="temp">8</span> °C</span>
+            </p>
+            <p>
+                <span><strong>conditions:</strong></span> 
+                <span>Partly Cloudy</span>
+            </p>
+            <p>
+                <span><strong>Wind:</strong></span> 
+                <span><span id="wind">15</span> km/h</span>
+            </p>
+            <p>
+                <span><strong>Wind Chill:</strong> </span> 
+                <span><span id="chill">N/A</span></span>
+            </p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>©<span id="currentyear"></span> | Joe Chu | Lima-Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
