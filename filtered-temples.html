@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="An LDS temple catalog from around the world. Discover beautiful galleries and learn more about The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Joe Chu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <button id="menuButton" aria-label="Toggle Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Old">Old</a></li>
+                <li><a href="#New">New</a></li>
+                <li><a href="#Large">Large</a></li>
+                <li><a href="#Small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="gallery"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Joe Chu | Lima-Peru</p>
+        <p id="lastModified"> </p>
+    </footer>
+</body>
+</html>
