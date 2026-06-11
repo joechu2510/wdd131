@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmed</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <div class="review-form" style="text-align: center;">
+            <h2>Review Submitted Successfully</h2>
+            <p>Your feedback helps us continuously improve our service.</p>
+            <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1.5rem 0;">
+            <p id="counter-display" style="font-weight: bold; color: var(--secondary-color);"></p>
+            <br>
+            <a href="form.html" class="submit-btn" style="text-decoration: none; display: inline-block;">Back to Form</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Down the River | Joe Chu</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Manage and increment review count tracker in localStorage
+            let reviewCount = localStorage.getItem("reviewCount");
+            reviewCount = reviewCount ? parseInt(reviewCount) : 0;
+
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+
+            const counterDisplay = document.getElementById("counter-display");
+            if (counterDisplay) {
+                counterDisplay.textContent = `Total reviews submitted: ${reviewCount}`;
+            }
+
+            // Exactly matching footer date logic
+            const yearSpan = document.querySelector("#currentyear");
+            const lastModifiedParagraph = document.getElementById("lastModified");
+            const today = new Date();
+
+            if (yearSpan && lastModifiedParagraph) {
+                yearSpan.innerHTML = today.getFullYear();
+                lastModifiedParagraph.innerHTML = document.lastModified;
+            }
+        });
+    </script>
+</body>
+</html>
