@@ -30,7 +30,6 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Manage and increment review count tracker in localStorage
             let reviewCount = localStorage.getItem("reviewCount");
             reviewCount = reviewCount ? parseInt(reviewCount) : 0;
 
@@ -42,7 +41,6 @@
                 counterDisplay.textContent = `Total reviews submitted: ${reviewCount}`;
             }
 
-            // Exactly matching footer date logic
             const yearSpan = document.querySelector("#currentyear");
             const lastModifiedParagraph = document.getElementById("lastModified");
             const today = new Date();
