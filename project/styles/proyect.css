@@ -466,3 +466,15 @@ img {
         flex-wrap: wrap;
     }
 }
+
+.references-split {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.references-box {
+    margin-top: 0;
+}
