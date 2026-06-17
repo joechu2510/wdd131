@@ -85,7 +85,7 @@ img {
 
 .hero-section {
     background: linear-gradient(rgba(38, 38, 38, 0.85), rgba(38, 38, 38, 0.85)), 
-                url('/project/images/save-the-day-example2.webp');
+                url('../images/save-the-day-example2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
